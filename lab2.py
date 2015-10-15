@@ -6,19 +6,7 @@ __author__ = 'Susan Sim'
 __email__ = "ses@drsusansim.org"
 __copyright__ = "2015 Susan Sim"
 __license__ = "MIT License"
-
-
 """
-Instructions: Add a function to to get input from the user and use that
-function in name_that_shape()
-
-The function should prompt the user for input until a legal value is
-entered. A legal value is any integer.
-
-"""
-
-def name_that_shape():
-    """
     For a given number of sides in a regular polygon, returns the shape name
 
     Inputs | Expected Outputs
@@ -36,8 +24,33 @@ def name_that_shape():
 
     Errors: ValueError when input is a string or float
 
-    """
 
+
+Instructions: Add a function to to get input from the user and use that
+function in name_that_shape()
+
+The function should prompt the user for input until a legal value is
+entered. A legal value is any integer.
+
+"""
+
+def input_value():
+    no_of_sides = raw_input("Number of sides:")
+    a=0
+    while a == 0:
+        try:
+            val = int(no_of_sides)
+            a = 1
+        except:
+            print("Try again. Please enter an integer")
+            no_of_sides = raw_input("Number of sides:")
+    return val
+
+input_value()
+
+
+"""
+def name_that_shape():
     sides = int(raw_input("Number of sides:"))
 
     if sides == 3:
@@ -59,4 +72,5 @@ def name_that_shape():
     else:
         print("Error")
 
-# name_that_shape()
+#name_that_shape()
+"""
