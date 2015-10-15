@@ -26,4 +26,7 @@ def vowel_or_consonant():
         print("consonant")
 
 
+vowel_or_consonant()
+
+
 
