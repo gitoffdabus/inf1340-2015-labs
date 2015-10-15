@@ -17,4 +17,13 @@ def vowel_or_consonant():
     "sometimes a vowel, sometimes a consonant". Otherwise your program should
     display a message indicating that the letter is a "consonant".
     """
+    letter = raw_input("Please type a letter from the alphabet:")
+    if letter in ("a", "e", "i", "o", "u"):
+        print("vowel")
+    elif letter == "y":
+        print("sometimes a vowel, sometimes a consonant")
+    else:
+        print("consonant")
+
+
 
