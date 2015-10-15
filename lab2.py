@@ -32,8 +32,8 @@ function in name_that_shape()
 The function should prompt the user for input until a legal value is
 entered. A legal value is any integer.
 
-"""
-"""
+
+
 def name_that_shape():
     sides = int(raw_input("Number of sides:"))
 
@@ -56,8 +56,8 @@ def name_that_shape():
     else:
         print("Error")
 
+name_that_shape()
 """
-
 def input_value():
     no_of_sides = raw_input("Number of sides:")
     a=0
@@ -71,5 +71,6 @@ def input_value():
     return val
 
 input_value()
+
 
 
