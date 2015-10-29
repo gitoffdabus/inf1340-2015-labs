@@ -44,8 +44,25 @@ def test_capitalization():
 def test_unexpected_input():
     try:
         assert days_in_month("dog")
-        assert days_in_month(1234)
-        assert days_in_month(3+4)
-        assert days_in_month(3.45)
     except ValueError:
+        return True
+
+    try:
+        assert days_in_month(%^)
+    except ValueError:
+        return True
+
+    try:
+        assert days_in_month(1234)
+    except ValueError:
+        return True
+
+    try:
+        assert days_in_month(3+4)
+    except AttributeError:
+        return True
+
+    try:
+        assert days_in_month(3.45)
+    except AttributeError:
         return True
