@@ -24,3 +24,16 @@ def days_in_month(month):
         raise ValueError
 
     return days
+
+#Write a test function for unexpected input
+#Hint: use a try/except block to deal with the exception
+#Hint: use data types other than strings as input
+
+"""
+    try:
+        some function call
+    except SomeError:
+        We get here, because an exception was raised
+        assert True
+
+"""
