@@ -58,7 +58,7 @@ def name_that_shape():
 
 name_that_shape()
 """
-def input_value():
+def enter_value():
     no_of_sides = raw_input("Number of sides:")
     a=0
     while a == 0:
@@ -66,11 +66,10 @@ def input_value():
             val = int(no_of_sides)
             a = 1
         except:
-            print("Try again. Please enter an integer")
+            print("Not an Integer")
             no_of_sides = raw_input("Number of sides:")
     return val
 
-input_value()
 
 
 
